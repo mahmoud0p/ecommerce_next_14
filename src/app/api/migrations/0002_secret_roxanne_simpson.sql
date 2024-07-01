@@ -1,0 +1,1 @@
+ALTER TABLE "order" ADD COLUMN "addres" text NOT NULL;

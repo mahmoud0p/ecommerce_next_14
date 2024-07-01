@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply the Roboto font-family to the body, inheriting it for all elements */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+@layer base {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    @apply dark:bg-[#0F0F0F] bg-white;
+  }
+
+  /* Additional scrollbar styles */
+  
+  .slider{
+    width: 100%;
+    height: 3px;
+    border-radius: 99999px;
+    @apply dark:bg-zinc-900 bg-slate-300
+  }
+  .slider .thumb{
+    width: 20px;
+    height :20px;
+    border-radius: 100%;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY( -50%);
+    transition: width 0.2s , height 0.2s;
+    outline: 0;
+    @apply dark:bg-indigo-900 bg-lightgreen border-2 border-white dark:border-[#0F0F0F]
+    
+  }
+  .slider .track-1 {
+    height: 3px;
+    top: 0;
+    @apply bg-lightgreen dark:bg-indigo-900
+  }
+  .slider .thumb:active{
+    width: 23px;
+    height: 23px;
+    
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Track color */
+  }
+
+  ::-webkit-scrollbar-thumb{
+    border-radius: 99999px;
+  }
+  /* Additional scrollbar styles for Firefox */
+
+
+  /* Apply the scrollbar styles globally */
+  html {
+    scrollbar-color: #6c757d transparent;
+  }
+}
+*{
+  scroll-behavior: smooth;
+}

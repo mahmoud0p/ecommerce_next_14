@@ -1,0 +1,10 @@
+::-webkit-scrollbar-thumb {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    background-color: black !important;
+    border-radius: 50%;
+}
+::-webkit-scrollbar-thumb {
+    background-color: black !important;
+    border-radius: 50%;
+}
