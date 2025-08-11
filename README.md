@@ -1,5 +1,3 @@
-
-=======
 # 🛒 Ecommerce Platform – Next.js 14
 
 A **modern, high-performance eCommerce platform** built with **Next.js v14**, **React v18**, and **Tailwind CSS v3**, leveraging **PostgreSQL** and **Drizzle ORM** for robust and scalable data management.  
